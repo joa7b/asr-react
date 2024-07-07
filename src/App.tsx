@@ -10,6 +10,7 @@
 //   // NavigationMenuViewport,
 // } from "./components/ui/navigation-menu"
 import { Badge } from "./components/ui/badge"
+import Logo from "./assets/logo.svg"
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
   return (
     <>
       <header className="flex justify-between items-center w-full px-4 sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <img src="src/assets/logo.svg" alt="" />
+        <img src={Logo} alt="" />
 
         {/* <NavigationMenu>
           <NavigationMenuList>
@@ -154,7 +155,7 @@ function App() {
         <div className="flex justify-evenly">
           <div>
             <h4 className="text-base">Oferecimento</h4>
-            <img src="src/assets/logo.svg" alt="" />
+            <img src={Logo} alt="" />
           </div>
           <div>
             <h4 className="text-2xl font-medium">Podcasts</h4>
