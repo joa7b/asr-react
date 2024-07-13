@@ -1,57 +1,15 @@
-// import { Avatar, AvatarFallback, AvatarImage } from "./components/ui/avatar"
-// import {
-//   NavigationMenu,
-//   NavigationMenuContent,
-//   // NavigationMenuIndicator,
-//   NavigationMenuItem,
-//   NavigationMenuLink,
-//   NavigationMenuList,
-//   NavigationMenuTrigger,
-//   // NavigationMenuViewport,
-// } from "./components/ui/navigation-menu"
-import { Badge } from "./components/ui/badge"
-import Logo from "./assets/logo.svg"
+
+import { Header } from "../components/organisms/Header"
+
+import { Badge } from "../components/ui/badge"
+import Logo from "../assets/logo.svg"
 
 
-function App() {
+export const Watcher = () => {
 
   return (
     <>
-      <header className="flex justify-between items-center w-full px-4 sticky top-0 z-50 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <img src={Logo} alt="" />
-
-        {/* <NavigationMenu>
-          <NavigationMenuList>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>Podcasts</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <NavigationMenuLink>Link</NavigationMenuLink>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-
-            <NavigationMenuItem>
-              <NavigationMenuTrigger className="text-neutral-500">Assinaturas</NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <NavigationMenuLink>Link</NavigationMenuLink>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>Loja</NavigationMenuTrigger>
-              
-              <NavigationMenuContent>
-                <NavigationMenuLink>Link</NavigationMenuLink>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            <Badge variant="outline" className="">Em breve</Badge>
-          </NavigationMenuList>
-        </NavigationMenu> */}
-
-        {/* <Avatar>
-          <AvatarImage src="https://github.com/shadcn.png" />
-          <AvatarFallback>CN</AvatarFallback>
-        </Avatar> */}
-      </header>
+      <Header />
 
       <section className="">
         <div style={{ position: 'relative', paddingTop: '56.25%' }}>
@@ -167,7 +125,7 @@ function App() {
             <h4 className="text-2xl font-medium">Coisas</h4>
             <ul>
               <li className="text-base">Assinaturas <Badge variant="outline" className="text-[#00BEC3]">Em breve</Badge></li>
-              <li className="text-base">Loja</li>
+              <li className="text-base">Loja <Badge variant="outline" className="text-[#00BEC3]">Em breve</Badge></li>
             </ul>
           </div>
         </div>
@@ -180,4 +138,3 @@ function App() {
   )
 }
 
-export default App
